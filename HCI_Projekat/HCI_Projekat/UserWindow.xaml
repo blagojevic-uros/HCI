@@ -4,9 +4,74 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_Projekat"
+        xmlns:viewModel="clr-namespace:HCI_Projekat.MVVM.ViewModel"
         mc:Ignorable="d"
-        Title="UserWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Height="600" 
+        Width="891.932"
+        Title="Aplikacija za Rezervaciju Proslava - Korisnicki Menu"
+        ResizeMode="NoResize"
+        Background="Transparent">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+
+    <Border Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="210"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#131d5e" Offset="0" />
+                        <GradientStop Color="#3a0646" Offset="1" />
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Prikaz Postojecih Proslava"
+                             Height="50"
+                             Margin="0,2,0,0"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding LoginViewCommand}"/>
+                <RadioButton Content="Kreiraj Novu Proslavu"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding RegisterViewCommand}"/>
+                <RadioButton Content="Izlaz iz Sistema"
+                             Height="60"
+                             Margin="0,405,0,0"
+                             Foreground="White"
+                             FontSize="18"
+                             Style="{StaticResource ResourceKey=MenuButtonTheme}"
+                             Command="{Binding ExitSystemCommand}"/>
+            </StackPanel>
+            <Rectangle Grid.ColumnSpan="2">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#131d5e" Offset="0" />
+                        <GradientStop Color="#3a0646" Offset="1" />
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}"/>
+
+
+        </Grid>
+    </Border>
 </Window>

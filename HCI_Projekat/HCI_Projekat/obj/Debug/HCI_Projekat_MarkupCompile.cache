@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\App.xaml
-7-1159168644
+999995070
 
-14-273448690
+181428696381
 13-1505183044
-AdminWindow.xaml;MainWindow.xaml;MVVM\View\LoginView.xaml;MVVM\View\RegisterView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextboxTheme.xaml;UserWindow.xaml;
+AdminWindow.xaml;MainWindow.xaml;MVVM\View\UserNovaProslavaView.xaml;MVVM\View\UserProslavaView.xaml;MVVM\View\LoginView.xaml;MVVM\View\RegisterView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextboxTheme.xaml;UserWindow.xaml;
 
 False
 

@@ -52,3 +52,7 @@ D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.csproj.GenerateResou
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.csproj.CoreCompileInputs.cache
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.exe
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.pdb
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserNovaProslavaView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserProslavaView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserNovaProslavaView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserProslavaView.baml

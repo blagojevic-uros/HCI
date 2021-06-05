@@ -58,6 +58,14 @@
     <Compile Include="AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\ViewModel\UserNovaProslavaViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\UserProslavaViewModel.cs" />
+    <Compile Include="MVVM\View\UserNovaProslavaView.xaml.cs">
+      <DependentUpon>UserNovaProslavaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\UserProslavaView.xaml.cs">
+      <DependentUpon>UserProslavaView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
     </Compile>
@@ -79,6 +87,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MVVM\View\UserNovaProslavaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MVVM\View\UserProslavaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MVVM\View\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -136,7 +152,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Fonts\" />
     <Folder Include="Images\" />
     <Folder Include="MVVM\Model\" />
   </ItemGroup>
