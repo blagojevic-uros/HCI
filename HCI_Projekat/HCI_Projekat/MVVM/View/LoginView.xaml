@@ -7,17 +7,22 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <Label Content="Unesite Vasu Email Adresu"
+        <Label Content="Unesite Vasu _Email Adresu"
                    Foreground="Black"
                    Grid.Column="1"
                    Grid.Row="1"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Padding="67,0,0,0"
-                   FontSize="16" Height="31" Width="331" Margin="244,0,225,0"/>
+                   FontSize="16" Height="31"
+                   Width="331" 
+                   Margin="244,0,225,0"
+                   Target="{Binding ElementName=EmailTxtBox}"/>
         <TextBox 
-                     Style="{StaticResource ModernTextbox}" Height="79"/>
-        <Label Content="Unesite Vasu Lozinku"
+                 Style="{StaticResource ModernTextbox}"
+                Height="79"
+            Name="EmailTxtBox"/>
+        <Label Content="Unesite Vasu _Lozinku"
                 Foreground="Black"
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
@@ -25,14 +30,18 @@
                 Padding="110,0,0,0"
                 Grid.Row="1"
                 FontSize="16" Height="31" 
-               Margin="219,40,200,0" Width="381" RenderTransformOrigin="0.623,0.698"/>
+               Margin="219,40,200,0" Width="381"
+               RenderTransformOrigin="0.623,0.698"
+               Target="{Binding ElementName=PasswordTxtBox}"/>
         <TextBox
-                Style="{StaticResource PrazanLoginTextBox}" Height="61"/>
-        <Button Content="Prijava na Sistem"
+                Style="{StaticResource PrazanLoginTextBox}" 
+                Height="61"
+                Name="PasswordTxtBox"/>
+        <Button Content="_Prijava na Sistem"
                 Width="220"
                 Height="50"
                 Margin="0,140,0,0"
                 Background="#131d5e"
-                Foreground="White" Click="Button_Click"/>
+                Foreground="White" Click="Button_Click" AutomationProperties.AcceleratorKey="N"/>
     </StackPanel>
 </UserControl>

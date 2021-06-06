@@ -56,3 +56,7 @@ D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserNovaProslavaView.g.
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserProslavaView.g.cs
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserNovaProslavaView.baml
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserProslavaView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\OrganizatorWindow.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\OrganizatorWindow.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgNovaProslava.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgNovaProslava.baml

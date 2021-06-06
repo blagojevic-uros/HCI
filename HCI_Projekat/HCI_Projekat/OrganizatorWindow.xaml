@@ -1,21 +1,15 @@
-﻿<Window x:Class="HCI_Projekat.UserWindow"
+﻿<Window x:Class="HCI_Projekat.OrganizatorWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_Projekat"
-        xmlns:viewModel="clr-namespace:HCI_Projekat.MVVM.ViewModel"
         mc:Ignorable="d"
-        Height="800" 
-        Width="1200"
-        Title="Aplikacija za Rezervaciju Proslava - Menu Korisnika"
+        Height="700" 
+        Width="1000"
+        Title="Aplikacija za Rezervaciju Proslava - Menu Organizatora"
         ResizeMode="NoResize"
         Background="Transparent">
-
-    <Window.DataContext>
-        <viewModel:UserViewModel/>
-    </Window.DataContext>
-
     <Border Background="White">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -37,26 +31,44 @@
                 </Rectangle.Fill>
             </Rectangle>
             <StackPanel Grid.Row="1">
-                <RadioButton Content="Prikaz Postojecih Proslava"
+                <RadioButton Content="Kreiraj Novu Proslavu"
                              Height="50"
                              Margin="0,2,0,0"
                              Foreground="White"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
+                             Style="{StaticResource KorisnickoDugme}"
                              IsChecked="True"
                              Command="{Binding LoginViewCommand}"/>
-                <RadioButton Content="Kreiraj Novu Proslavu"
+                <RadioButton Content="Kreiraj Novog Saradnika"
                              Height="50"
                              Foreground="White"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
+                             Style="{StaticResource KorisnickoDugme}"
+                             Command="{Binding RegisterViewCommand}"/>
+                <RadioButton Content="Prikaz Trenutnih Proslava"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource KorisnickoDugme}"
+                             Command="{Binding RegisterViewCommand}"/>
+                <RadioButton Content="Prikaz Trenutnih Saradnika"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource KorisnickoDugme}"
+                             Command="{Binding RegisterViewCommand}"/>
+                <RadioButton Content="Prikaz Gotovih Proslava"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource KorisnickoDugme}"
                              Command="{Binding RegisterViewCommand}"/>
                 <RadioButton Content="Izloguj Se"
                              Height="60"
-                             Margin="0,595,0,0"
+                             Margin="0,450,0,0"
                              Foreground="White"
                              FontSize="18"
-                             Style="{StaticResource ResourceKey=MenuButtonTheme}"
+                             Style="{StaticResource KorisnickoDugme}"
                              Command="{Binding ExitSystemCommand}"/>
             </StackPanel>
             <Rectangle Grid.ColumnSpan="4" 
