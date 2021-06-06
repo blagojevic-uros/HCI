@@ -58,5 +58,13 @@ D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserNovaProslavaView.ba
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserProslavaView.baml
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\OrganizatorWindow.g.cs
 D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\OrganizatorWindow.baml
-D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgNovaProslava.g.cs
-D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgNovaProslava.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgGotoveProslaveView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgKrProslavuView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgKrSaradnikaView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgTrenutneProslaveView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgTrenutniSaradniciView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgGotoveProslaveView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgKrProslavuView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgKrSaradnikaView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgTrenutneProslaveView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgTrenutniSaradniciView.baml

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace HCI_Projekat.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for OrgNovaProslava.xaml
+    /// Interaction logic for OrgTrenutneProslaveView.xaml
     /// </summary>
-    public partial class OrgNovaProslava : UserControl
+    public partial class OrgTrenutneProslaveView : UserControl
     {
-        public OrgNovaProslava()
+        public OrgTrenutneProslaveView()
         {
             InitializeComponent();
         }
