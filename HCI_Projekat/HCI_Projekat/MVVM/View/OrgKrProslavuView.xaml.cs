@@ -27,7 +27,8 @@ namespace HCI_Projekat.MVVM.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            //PROVERA DA LI SU SVI PODACI VALIDNI U INPUTIMA AKO JESU 
+            //ISKACE DIJALOG DA LI STE SIGURNI DA ZELITE DA NAPRAVITE PROSLAVU
         }
     }
 }

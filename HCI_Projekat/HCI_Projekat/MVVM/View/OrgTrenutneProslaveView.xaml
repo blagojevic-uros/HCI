@@ -5,8 +5,57 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HCI_Projekat.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="650" d:DesignWidth="770">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="187*"/>
+            <RowDefinition Height="138*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Tabela Aktivnih Proslava"
+               FontSize="19" Margin="46,-1,483,329.887"/>
+        <ListBox Margin="34,49,483,5.887"
+                 Background="#3a0646"
+                 Name="LB_SveProslave"
+                 AllowDrop="True"
+                 Drop="LB_SveProslave_Drop"
+                 PreviewMouseLeftButtonDown="LB_SveProslave_PreviewMouseLeftButtonDown"
+                 MouseMove="LB_SveProslave_MouseMove"
+                 FontSize="24"
+                 Foreground="#CFCFCF"
+                 HorizontalContentAlignment="Center">
+            <ListBoxItem Content="LB1 Item 1" Padding="0,20,0,5"/>
+            <ListBoxItem Content="LB1 Item 2" Padding="0,20,0,5"/>
+            <ListBoxItem Content="LB1 Item 3" Padding="0,20,0,5"/>
+            <ListBoxItem Content="LB1 Item 4" Padding="0,20,0,5"/>
+            <ListBoxItem Content="LB1 Item 5" Padding="0,20,0,5"/>
+            <ListBoxItem Content="LB1 Item 6" Padding="0,20,0,5"/>
+        </ListBox>
+        <Label Content="Odabrana Proslava"
+            FontSize="19" Margin="62,114,495,93" Grid.Row="1"/>
+        <ListBox Margin="34,152,483,43"
+            Background="#3a0646" 
+                 Grid.Row="1"
+                 Name="LB_OdabranaProslava"
+                 AllowDrop="True"
+                 Foreground="#CFCFCF"
+                 FontSize="24"
+                 Drop="LB_OdabranaProslava_Drop"
+                 MouseMove="LB_OdabranaProslava_MouseMove"
+                 PreviewMouseLeftButtonDown="LB_OdabranaProslava_PreviewMouseLeftButtonDown"/>
+        <Label Content="(prevuci proslavu ka dole)"
+               FontSize="17" Margin="46,368,471,236" Grid.RowSpan="2"/>
+        <Label Content="(da je prikazes)"
+               FontSize="17" Margin="87,17,430,213" Grid.Row="1"/>
+        <Label Content="--->"
+               FontSize="28" Margin="97,69,563,134" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
     </Grid>
 </UserControl>
