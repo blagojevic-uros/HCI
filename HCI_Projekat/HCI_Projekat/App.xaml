@@ -18,6 +18,12 @@
             <DataTemplate DataType="{x:Type viewModel:RegisterViewModel}">
                 <view:RegisterView/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:UserProslavaViewModel}">
+                <view:UserProslavaView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:UserNovaProslavaViewModel}">
+                <view:UserNovaProslavaView/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

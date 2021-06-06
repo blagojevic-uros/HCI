@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace HCI_Projekat.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for LoginView.xaml
+    /// Interaction logic for OrgNovaProslava.xaml
     /// </summary>
-    public partial class LoginView : UserControl
+    public partial class OrgNovaProslava : UserControl
     {
-        public LoginView()
+        public OrgNovaProslava()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            UserWindow window = new UserWindow();
-            window.Show();
         }
     }
 }

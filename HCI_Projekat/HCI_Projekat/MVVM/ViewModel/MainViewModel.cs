@@ -12,6 +12,7 @@ namespace HCI_Projekat.MVVM.ViewModel
         public LoginViewModel LoginVM { get; set; }
         public RegisterViewModel RegisterVM { get; set; }
 
+
         private object _currentView;
 
         public object CurrentView
@@ -27,7 +28,7 @@ namespace HCI_Projekat.MVVM.ViewModel
         {
             LoginVM = new LoginViewModel();
             RegisterVM = new RegisterViewModel();
-
+            
             CurrentView = LoginVM;
 
             LoginViewCommand = new RelayCommand(o => {
@@ -37,6 +38,7 @@ namespace HCI_Projekat.MVVM.ViewModel
                 CurrentView = RegisterVM;
             });
             ExitSystemCommand = new RelayCommand(o => {
+                //DA LI STE SIGURNI DA ZELITE DA NAPUSTITE APLIKACIJU
                 Environment.Exit(0);
             });
         }

@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HCI_Projekat.MVVM.View
+namespace HCI_Projekat
 {
     /// <summary>
-    /// Interaction logic for LoginView.xaml
+    /// Interaction logic for OrganizatorWindow.xaml
     /// </summary>
-    public partial class LoginView : UserControl
+    public partial class OrganizatorWindow : Window
     {
-        public LoginView()
+        public OrganizatorWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            UserWindow window = new UserWindow();
-            window.Show();
         }
     }
 }

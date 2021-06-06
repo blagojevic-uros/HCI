@@ -18,17 +18,11 @@ namespace HCI_Projekat.MVVM.View
     /// <summary>
     /// Interaction logic for LoginView.xaml
     /// </summary>
-    public partial class LoginView : UserControl
+    public partial class UserNovaProslavaView : UserControl
     {
-        public LoginView()
+        public UserNovaProslavaView()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            UserWindow window = new UserWindow();
-            window.Show();
         }
     }
 }
