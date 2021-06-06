@@ -23,5 +23,21 @@ namespace HCI_Projekat
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Da li ste sigurni da zelite da se odjavite ?","Potvrda Odjavljivanja", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    MainWindow window = new MainWindow();
+                    window.Show();
+                    Hide();
+                    break;
+                case MessageBoxResult.No:
+                    
+                    break;
+            }
+        }
     }
 }

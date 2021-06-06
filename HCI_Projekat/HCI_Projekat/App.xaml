@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:HCI_Projekat"
              xmlns:viewModel="clr-namespace:HCI_Projekat.MVVM.ViewModel"
              xmlns:view="clr-namespace:HCI_Projekat.MVVM.View"
-             StartupUri="MainWindow.xaml">
+             StartupUri="OrganizatorWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -12,18 +12,43 @@
                 <ResourceDictionary Source="Theme/TextboxTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
+            
+            
             <DataTemplate DataType="{x:Type viewModel:LoginViewModel}">
                 <view:LoginView/>
             </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:RegisterViewModel}">
                 <view:RegisterView/>
             </DataTemplate>
+
+            
+            
             <DataTemplate DataType="{x:Type viewModel:UserProslavaViewModel}">
                 <view:UserProslavaView/>
             </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:UserNovaProslavaViewModel}">
                 <view:UserNovaProslavaView/>
             </DataTemplate>
+
+
+            <DataTemplate DataType="{x:Type viewModel:OrgTrenutneProslaveViewModel}">
+                <view:OrgTrenutneProslaveView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:OrgTrenutniSaradniciViewModel}">
+                <view:OrgTrenutniSaradniciView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:OrgKrProslavuViewModel}">
+                <view:OrgKrProslavuView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:OrgKrSaradnikaViewModel}">
+                <view:OrgKrSaradnikaView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:OrgGotoveProslaveViewModel}">
+                <view:OrgGotoveProslaveView/>
+            </DataTemplate>
+            
+            
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

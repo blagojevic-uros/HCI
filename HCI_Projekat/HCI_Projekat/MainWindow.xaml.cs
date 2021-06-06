@@ -24,5 +24,18 @@ namespace HCI_Projekat
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result1 = MessageBox.Show("Da li ste sigurni da zelite da ugasite Aplikaciju ?", "Potvrda Gasenja Aplikacije", MessageBoxButton.YesNo);
+            switch (result1)
+            {
+                case MessageBoxResult.Yes:
+                    Environment.Exit(0);
+                    break;
+                case MessageBoxResult.No:
+                    break;
+            }
+        }
     }
 }
