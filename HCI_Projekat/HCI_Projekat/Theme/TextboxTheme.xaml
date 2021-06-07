@@ -199,14 +199,14 @@
                                      BorderThickness="0"
                                      Background="Transparent"
                                      VerticalContentAlignment="Center"
-                                     Padding="5"
+                                     HorizontalAlignment="Center"
                                      Foreground="#CFCFCF"
                                      x:Name="SearchBox"/>
                             <TextBlock IsHitTestVisible="False"
                                        VerticalAlignment="Center"
                                        Text="DD.MM.GGGG"
-                                       HorizontalAlignment="Left"
-                                       Margin="10,0,0,0"
+                                       HorizontalAlignment="Center"
+                                       Margin="0,0,0,0"
                                        FontSize="14"
                                        Foreground="#CFCFCF"
                                        Grid.Column="1">
@@ -281,8 +281,8 @@
                 <ControlTemplate TargetType="{x:Type TextBox}">
                     <Border CornerRadius="10,0,0,10"
                             Background="#3a0646"
-                            Width="250"
-                            Height="220">
+                            Width="410"
+                            Height="120">
                         <Grid>
                             <Rectangle StrokeThickness="1"/>
                             <TextBox Margin="1"
@@ -294,6 +294,95 @@
                                      TextWrapping="Wrap"
                                      AcceptsReturn="True"
                                      VerticalScrollBarVisibility="Visible"
+                                     x:Name="SearchBox"/>
+                            <TextBlock IsHitTestVisible="False"
+                                       HorizontalAlignment="Left"
+                                       Margin="10,0,0,0"
+                                       FontSize="14"
+                                       Foreground="#CFCFCF"
+                                       Grid.Column="1">
+
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=SearchBox}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </Grid>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+           x:Key="Komentar2TxtBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10,0,0,10"
+                            Background="#3a0646"
+                            Width="340"
+                            Height="130">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                                     Text="{TemplateBinding Text}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     Padding="5"
+                                     Foreground="#CFCFCF"
+                                     TextWrapping="Wrap"
+                                     AcceptsReturn="True"
+                                     VerticalScrollBarVisibility="Visible"
+                                     x:Name="SearchBox"/>
+                            <TextBlock IsHitTestVisible="False"
+                                       HorizontalAlignment="Left"
+                                       Margin="10,0,0,0"
+                                       FontSize="14"
+                                       Foreground="#CFCFCF"
+                                       Grid.Column="1">
+
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=SearchBox}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </Grid>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+           x:Key="PrikazTxtBoxic">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                            Background="#3a0646"
+                            Width="180"
+                            Height="50">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                                     Text="{TemplateBinding Text}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     Padding="5"
+                                     Foreground="#CFCFCF"
                                      x:Name="SearchBox"/>
                             <TextBlock IsHitTestVisible="False"
                                        HorizontalAlignment="Left"

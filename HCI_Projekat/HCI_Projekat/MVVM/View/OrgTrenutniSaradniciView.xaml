@@ -5,8 +5,110 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HCI_Projekat.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="650" d:DesignWidth="770">
     <Grid>
+        <Label Content="Tabela Aktivnih Proslava"
+            FontSize="19" Margin="46,-1,483,606"/>
+        <ListBox Margin="34,49,483,282"
+            Background="#131d5e"
+            x:Name="LB_SveProslave"
+            AllowDrop="True"
+            Drop="LB_SveProslave_Drop"
+            PreviewMouseLeftButtonDown="LB_SveProslave_PreviewMouseLeftButtonDown"
+            MouseMove="LB_SveProslave_MouseMove"
+            FontSize="20"
+            Foreground="#CFCFCF"
+            HorizontalContentAlignment="Center">
+            <ListBoxItem Content="LB1 Item 1" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 2" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 3" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 4" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 5" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 6" Padding="0,10,0,10"/>
+        </ListBox>
+        <Label Content="Odabrana Proslava"
+            FontSize="19" Margin="62,488,495,93"/>
+        <ListBox Margin="34,526,483,53"
             
+            Background="#131d5e"
+            x:Name="LB_OdabranaProslava"
+            AllowDrop="True"
+            Foreground="#CFCFCF"
+            FontSize="20"
+            Drop="LB_OdabranaProslava_Drop"
+            MouseMove="LB_OdabranaProslava_MouseMove"
+            PreviewMouseLeftButtonDown="LB_OdabranaProslava_PreviewMouseLeftButtonDown"/>
+        <Label Content="(prevuci proslavu ka dole)"
+            FontSize="17" Margin="46,368,471,236"/>
+        <Label Content="(kako bi se prikazala)"
+            FontSize="17" Margin="62,399,495,205"/>
+        <Label Content="---&gt;"
+            FontSize="28" Margin="97,443,563,134" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Ime i Prezime Klijenta"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="329,69,212,537"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="329,102,237,489" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <TextBox Style="{StaticResource KomentarTxtBox}" 
+            Margin="329,296,10,53" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Prikaz Odabrane Proslave"
+            FontSize="19" Margin="404,-1,125,606"/>
+        <Label Content="Tema Proslave"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="329,159,212,447"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="329,192,237,399" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Budzet Proslave"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="329,247,212,359"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="329,280,237,311" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Mesto Proslave"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="556,69,-15,537"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="556,102,10,489" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Datum Proslave"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="556,159,-15,447"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="556,192,10,399" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Kapacitet Prostorije"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="556,247,-15,359"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="556,280,10,311" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Dodatni Komentar"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="453,350,88,256"/>
+        <Button Content="Obrisi Proslavu"
+            Margin="435,553,125,40"
+            FontSize="18"
+            Background="#9c2a28"
+            Foreground="White" 
+        />
     </Grid>
 </UserControl>
