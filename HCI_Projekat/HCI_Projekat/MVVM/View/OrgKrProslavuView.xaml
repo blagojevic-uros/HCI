@@ -31,21 +31,21 @@
             Margin="43,10,84,90" 
             RenderTransformOrigin="0.5,0.5" Grid.Row="1"/>
         <Label Content="Budzet Proslave"
-            FontSize="18" Margin="3,150,209,133" Grid.Column="1" Grid.RowSpan="2"/>
+            FontSize="18" Margin="4,130,208,153" Grid.Column="1" Grid.RowSpan="2"/>
         <TextBox Style="{StaticResource MoneyTxtBox}" 
-            Margin="369,30,225,70" 
+            Margin="370,10,224,90" 
             RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.Row="1"/>
         <Label Content="Kapacitet Proslave"
             Grid.Column="1"
-            FontSize="18" Margin="184,150,-118,133" Grid.RowSpan="2"/>
+            FontSize="18" Margin="185,130,-119,153" Grid.RowSpan="2"/>
         <TextBox Style="{StaticResource MoneyTxtBox}" 
-            Margin="183,30,31,70" 
+            Margin="184,10,30,90" 
             RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1"/>
         <Label Content="Dodatni Komentar"
             Grid.Column="1"
-            FontSize="18" Margin="84,109,94,10" Grid.Row="1"/>
+            FontSize="18" Margin="84,110,94,9" Grid.Row="1"/>
         <TextBox Style="{StaticResource Komentar2TxtBox}" 
-            Margin="320,137,-26,30" 
+            Margin="320,138,-26,29" 
             RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1"/>
         <Button Content="Kreiraj Proslavu"
                 Margin="276,62,284,44"
@@ -61,11 +61,6 @@
         <TextBox Style="{StaticResource PrazanTextBox}" 
             Margin="43,122,84,140" 
             RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="2"/>
-        <Label Content="Datum Proslave"
-            FontSize="18" Margin="102,38,82,63" Grid.Column="1"/>
-        <TextBox Style="{StaticResource DatumRegisterTextBox}" 
-            Margin="38,66,82,35" 
-            RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
         <Label Content="Tema Proslave"
             Grid.Row="2"
             Grid.Column="0"
@@ -73,5 +68,16 @@
         <TextBox Style="{StaticResource PrazanTextBox}" 
             Margin="43,70,84,29" 
             RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
+        <Label Content="Datum Proslave"
+            FontSize="18" Margin="4,22,208,98" Grid.Column="1"/>
+        <TextBox Style="{StaticResource MoneyTxtBox}" 
+            Margin="370,65,224,35" 
+            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
+        <Label Content="Broj Stolova"
+            Grid.Column="1"
+            FontSize="18" Margin="185,22,-119,98"/>
+        <TextBox Style="{StaticResource MoneyTxtBox}" 
+            Margin="184,65,30,35" 
+            RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
     </Grid>
 </UserControl>
