@@ -58,10 +58,6 @@
     <Compile Include="AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\Model\Korisnik.cs" />
-    <Compile Include="MVVM\Model\Proslava.cs" />
-    <Compile Include="MVVM\Model\Saradnik.cs" />
-    <Compile Include="MVVM\Model\Sto.cs" />
     <Compile Include="MVVM\ViewModel\OrganizatorViewModel.cs" />
     <Compile Include="MVVM\ViewModel\OrgGotoveProslaveViewModel.cs" />
     <Compile Include="MVVM\ViewModel\OrgKrProslavuViewModel.cs" />
@@ -206,7 +202,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="MVVM\Data\" />
+    <Folder Include="MVVM\Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
