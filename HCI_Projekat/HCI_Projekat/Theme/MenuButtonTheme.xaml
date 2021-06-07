@@ -29,4 +29,54 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+    <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
+           TargetType="{x:Type RadioButton}"
+           x:Key="KorisnickoDugme">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Grid VerticalAlignment="Stretch"
+                          HorizontalAlignment="Stretch"
+                          Background="{TemplateBinding Background}">
+
+                            <TextBlock Text="{TemplateBinding Property=Content}"
+                                   VerticalAlignment="Center"
+                                   Margin="10,0,0,0"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style.Setters>
+
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Background" Value="#22202f"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
+           TargetType="{x:Type RadioButton}"
+           x:Key="LogoutDugme">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Grid VerticalAlignment="Stretch"
+                          HorizontalAlignment="Stretch"
+                          Background="{TemplateBinding Background}">
+
+                            <TextBlock Text="{TemplateBinding Property=Content}"
+                                   VerticalAlignment="Center"
+                                   Margin="10,0,0,0"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style.Setters>
+    </Style>
 </ResourceDictionary>

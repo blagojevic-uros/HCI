@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Faks\Moje\3. Godina\HCI\Projekat\HCI_Projekat\HCI_Projekat\obj\Debug\
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\
 HCI_Projekat
 none
 false
 DEBUG;TRACE
-D:\Faks\Moje\3. Godina\HCI\Projekat\HCI_Projekat\HCI_Projekat\App.xaml
-7-1159168644
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\App.xaml
+15-1213050000
 
-15-1115808057
+36832179298
 13-1505183044
-AdminWindow.xaml;MainWindow.xaml;MVVM\View\LoginView.xaml;MVVM\View\RegisterView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextboxTheme.xaml;UserWindow.xaml;
+AdminWindow.xaml;MainWindow.xaml;MVVM\View\OrgGotoveProslaveView.xaml;MVVM\View\OrgKrProslavuView.xaml;MVVM\View\OrgKrSaradnikaView.xaml;MVVM\View\OrgTrenutneProslaveView.xaml;MVVM\View\OrgTrenutniSaradniciView.xaml;MVVM\View\UserNovaProslavaView.xaml;MVVM\View\UserProslavaView.xaml;MVVM\View\LoginView.xaml;MVVM\View\RegisterView.xaml;OrganizatorWindow.xaml;Theme\MenuButtonTheme.xaml;Theme\TextboxTheme.xaml;UserWindow.xaml;
 
-True
+False
 

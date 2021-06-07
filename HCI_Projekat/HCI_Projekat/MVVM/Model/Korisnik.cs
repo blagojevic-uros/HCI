@@ -29,4 +29,7 @@ namespace HCI_Projekat.MVVM.Model
         }
         public Korisnik() { }
     }
+
 }
+
+

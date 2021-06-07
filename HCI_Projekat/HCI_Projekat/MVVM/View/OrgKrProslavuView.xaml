@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="HCI_Projekat.MVVM.View.OrgKrProslavuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HCI_Projekat.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="770">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="194*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Ime i Prezime Klijenta"
+           Grid.Row="0"
+           Grid.Column="0"
+           FontSize="18" Margin="60,33,118,87"/>
+        <TextBox Style="{StaticResource PrazanTextBox}" 
+            Margin="43,65,84,35" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Email Adresa Klijenta"
+            Grid.Column="0"
+            FontSize="18" Margin="60,139,118,124" Grid.RowSpan="2"/>
+        <TextBox Style="{StaticResource PrazanTextBox}" 
+            Margin="43,10,84,90" 
+            RenderTransformOrigin="0.5,0.5" Grid.Row="1"/>
+        <Label Content="Budzet Proslave"
+            FontSize="18" Margin="4,130,208,153" Grid.Column="1" Grid.RowSpan="2"/>
+        <TextBox Style="{StaticResource MoneyTxtBox}" 
+            Margin="370,10,224,90" 
+            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Label Content="Kapacitet Proslave"
+            Grid.Column="1"
+            FontSize="18" Margin="185,130,-119,153" Grid.RowSpan="2"/>
+        <TextBox Style="{StaticResource MoneyTxtBox}" 
+            Margin="184,10,30,90" 
+            RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Dodatni Komentar"
+            Grid.Column="1"
+            FontSize="18" Margin="84,110,94,9" Grid.Row="1"/>
+        <TextBox Style="{StaticResource Komentar2TxtBox}" 
+            Margin="320,138,-26,29" 
+            RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Button Content="Kreiraj Proslavu"
+                Margin="276,62,284,44"
+                FontSize="18"
+                Background="#131d5e"
+                Foreground="White" 
+                Grid.Row="3" 
+                Click="Button_Click" Grid.ColumnSpan="2"/>
+        <Label Content="Odaberi Saradnika"
+            Grid.Row="1"
+            Grid.Column="0"
+            FontSize="18" Margin="60,90,118,30"/>
+        <TextBox Style="{StaticResource PrazanTextBox}" 
+            Margin="43,122,84,140" 
+            RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="2"/>
+        <Label Content="Tema Proslave"
+            Grid.Row="2"
+            Grid.Column="0"
+            FontSize="18" Margin="60,38,118,81"/>
+        <TextBox Style="{StaticResource PrazanTextBox}" 
+            Margin="43,70,84,29" 
+            RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
+        <Label Content="Datum Proslave"
+            FontSize="18" Margin="4,22,208,98" Grid.Column="1"/>
+        <TextBox Style="{StaticResource MoneyTxtBox}" 
+            Margin="370,65,224,35" 
+            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
+        <Label Content="Broj Stolova"
+            Grid.Column="1"
+            FontSize="18" Margin="185,22,-119,98"/>
+        <TextBox Style="{StaticResource MoneyTxtBox}" 
+            Margin="184,65,30,35" 
+            RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
+    </Grid>
+</UserControl>

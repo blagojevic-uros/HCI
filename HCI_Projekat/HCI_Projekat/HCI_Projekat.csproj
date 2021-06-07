@@ -58,6 +58,39 @@
     <Compile Include="AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\ViewModel\OrganizatorViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\OrgGotoveProslaveViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\OrgKrProslavuViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\OrgKrSaradnikaViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\OrgTrenutneProslaveViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\OrgTrenutniSaradniciViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\UserNovaProslavaViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\UserProslavaViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\UserViewModel.cs" />
+    <Compile Include="MVVM\View\OrgGotoveProslaveView.xaml.cs">
+      <DependentUpon>OrgGotoveProslaveView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\OrgKrProslavuView.xaml.cs">
+      <DependentUpon>OrgKrProslavuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\OrgKrSaradnikaView.xaml.cs">
+      <DependentUpon>OrgKrSaradnikaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\OrgTrenutneProslaveView.xaml.cs">
+      <DependentUpon>OrgTrenutneProslaveView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\OrgTrenutniSaradniciView.xaml.cs">
+      <DependentUpon>OrgTrenutniSaradniciView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\UserNovaProslavaView.xaml.cs">
+      <DependentUpon>UserNovaProslavaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\UserProslavaView.xaml.cs">
+      <DependentUpon>UserProslavaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizatorWindow.xaml.cs">
+      <DependentUpon>OrganizatorWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
     </Compile>
@@ -79,11 +112,43 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MVVM\View\OrgGotoveProslaveView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\OrgKrProslavuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\OrgKrSaradnikaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\OrgTrenutneProslaveView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\OrgTrenutniSaradniciView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\UserNovaProslavaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MVVM\View\UserProslavaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MVVM\View\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\RegisterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OrganizatorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -136,7 +201,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Fonts\" />
     <Folder Include="Images\" />
     <Folder Include="MVVM\Model\" />
   </ItemGroup>

@@ -24,5 +24,11 @@ namespace HCI_Projekat.MVVM.View
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            UserWindow window = new UserWindow();
+            window.Show();
+        }
     }
 }

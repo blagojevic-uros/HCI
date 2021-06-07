@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="HCI_Projekat.MVVM.View.OrgTrenutneProslaveView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HCI_Projekat.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="770">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="703*"/>
+            <ColumnDefinition Width="67*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="187*"/>
+            <RowDefinition Height="138*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Tabela Trenutnih Proslava"
+               FontSize="19" Margin="46,-1,416,330"/>
+        <Rectangle Fill="#413469"
+                   RadiusX="10"
+                   RadiusY="10"
+                   StrokeDashArray="2"
+                   StrokeThickness="3"
+                   Stroke="Silver" Margin="34,44,416,0"/>
+        <ListBox Margin="34,49,416,6"
+                 Background="Transparent"
+                 Name="LB_SveProslave"
+                 BorderThickness="0"
+                 AllowDrop="True"
+                 Drop="LB_SveProslave_Drop"
+                 PreviewMouseLeftButtonDown="LB_SveProslave_PreviewMouseLeftButtonDown"
+                 MouseMove="LB_SveProslave_MouseMove"
+                 FontSize="20"
+                 Foreground="#CFCFCF"
+                 HorizontalContentAlignment="Center">
+            <ListBoxItem Content="LB1 Item 1" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 2" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 3" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 4" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 5" Padding="0,10,0,10"/>
+            <ListBoxItem Content="LB1 Item 6" Padding="0,10,0,10"/>
+        </ListBox>
+        <Label Content="Odabrana Proslava"
+            FontSize="19" Margin="62,114,428,93" Grid.Row="1"/>
+        <Rectangle Fill="WhiteSmoke"
+                   RadiusX="10"
+                   RadiusY="10"
+                   StrokeDashArray="2"
+                   StrokeThickness="3"
+                   Stroke="Silver" Margin="34,152,416,40" Grid.Row="1"/>
+        <ListBox Margin="46,163,428,53"
+                 Background="WhiteSmoke"
+                 BorderThickness="0"
+                 Grid.Row="1"
+                 Name="LB_OdabranaProslava"
+                 AllowDrop="True"
+                 Foreground="Black"
+                 FontSize="20"
+                 Drop="LB_OdabranaProslava_Drop"
+                 MouseMove="LB_OdabranaProslava_MouseMove"
+                 PreviewMouseLeftButtonDown="LB_OdabranaProslava_PreviewMouseLeftButtonDown"/>
+        <Label Content="(prevucite proslavu ka dole)"
+               FontSize="17" Margin="46,368,404,236" Grid.RowSpan="2"/>
+        <Label Content="(kako bi se prikazala)"
+               FontSize="17" Margin="62,25,428,205" Grid.Row="1"/>
+        <Label Content="--->"
+               FontSize="28" Margin="97,69,496,134" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Ime i Prezime Klijenta"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="329,69,145,261"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="329,102,170,213" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <TextBox Style="{StaticResource KomentarTxtBox}" 
+            Margin="323,290,16,59" 
+            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Label Content="Prikaz Odabrane Proslave"
+            FontSize="19" Margin="404,-1,58,330"/>
+        <Label Content="Datum Proslave"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="329,159,145,171"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="329,192,170,123" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Budzet Proslave"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="329,247,145,83"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="329,280,170,35" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Ime Lokala"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="556,69,-15,261" Grid.ColumnSpan="2"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="556,102,10,213" 
+            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
+        <Label Content="Tema Proslave"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="556,159,-15,171" Grid.ColumnSpan="2"/>
+        <Label Content="Raspored Stolova"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="556,247,-15,83" Grid.ColumnSpan="2"/>
+        <Label Content="Dodatni Komentar"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="447,344,27,262" Grid.RowSpan="2"/>
+        <Button Content="Prikazi Raspored"
+            Margin="563,280,16,37"
+            FontSize="18"
+            Background="#3a0646"
+            Foreground="White" Grid.ColumnSpan="2"/>
+        <Button Content="Azuriraj Proslavu"
+            Margin="329,166,176,53"
+            FontSize="18"
+            Background="#413469"
+            Foreground="White" 
+            Grid.Row="1" Click="Button_Click"/>
+        <Button Content="Obrisi Proslavu"
+            Margin="556,166,16,53"
+            FontSize="18"
+            Background="#9c2a28"
+            Foreground="White" 
+            Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Margin="556,192,10,123" 
+            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
+    </Grid>
+</UserControl>

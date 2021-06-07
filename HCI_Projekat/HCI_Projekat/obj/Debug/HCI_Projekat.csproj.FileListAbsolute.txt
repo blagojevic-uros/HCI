@@ -25,3 +25,46 @@ D:\Faks\Moje\3. Godina\HCI\Projekat\HCI_Projekat\HCI_Projekat\obj\Debug\AdminWin
 D:\Faks\Moje\3. Godina\HCI\Projekat\HCI_Projekat\HCI_Projekat\obj\Debug\UserWindow.g.cs
 D:\Faks\Moje\3. Godina\HCI\Projekat\HCI_Projekat\HCI_Projekat\obj\Debug\AdminWindow.baml
 D:\Faks\Moje\3. Godina\HCI\Projekat\HCI_Projekat\HCI_Projekat\obj\Debug\UserWindow.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\bin\Debug\HCI_Projekat.exe.config
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\bin\Debug\HCI_Projekat.exe
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\bin\Debug\HCI_Projekat.pdb
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.csproj.AssemblyReference.cache
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\Theme\MenuButtonTheme.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\Theme\TextboxTheme.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\AdminWindow.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MainWindow.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\LoginView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\RegisterView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\UserWindow.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\App.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat_MarkupCompile.cache
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat_MarkupCompile.lref
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\App.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\AdminWindow.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MainWindow.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\LoginView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\RegisterView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\UserWindow.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.g.resources
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.Properties.Resources.resources
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.csproj.GenerateResource.cache
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.csproj.CoreCompileInputs.cache
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.exe
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\HCI_Projekat.pdb
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserNovaProslavaView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserProslavaView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserNovaProslavaView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\UserProslavaView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\OrganizatorWindow.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\OrganizatorWindow.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgGotoveProslaveView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgKrProslavuView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgKrSaradnikaView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgTrenutneProslaveView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgTrenutniSaradniciView.g.cs
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgGotoveProslaveView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgKrProslavuView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgKrSaradnikaView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgTrenutneProslaveView.baml
+D:\Git\HCI\HCI_Projekat\HCI_Projekat\obj\Debug\MVVM\View\OrgTrenutniSaradniciView.baml
