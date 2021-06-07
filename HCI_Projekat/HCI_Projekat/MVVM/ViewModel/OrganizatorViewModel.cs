@@ -39,7 +39,7 @@ namespace HCI_Projekat.MVVM.ViewModel
             OrgTrenutneProslaveVM = new OrgTrenutneProslaveViewModel();
             OrgTrenutniSaradniciVM = new OrgTrenutniSaradniciViewModel();
             OrgGotoveProslaveVM = new OrgGotoveProslaveViewModel();
-            CurrentView = OrgTrenutneProslaveVM;
+            CurrentView = OrgKreirajProslavuVM;
 
             OrgKreirajProslavuCommand = new RelayCommand(o => {
                 CurrentView = OrgKreirajProslavuVM;

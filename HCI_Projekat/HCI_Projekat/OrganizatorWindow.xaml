@@ -37,11 +37,24 @@
                 </Rectangle.Fill>
             </Rectangle>
             <StackPanel Grid.Row="1">
+                <RadioButton Content="Kreiraj Novu Proslavu"
+                             Height="50"
+                             Margin="0,2,0,0"
+                             Foreground="White"
+                             IsChecked="True"
+                             FontSize="16"
+                             Style="{StaticResource KorisnickoDugme}"
+                             Command="{Binding OrgKreirajProslavuCommand}"/>
+                <RadioButton Content="Kreiraj Novog Saradnika"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource KorisnickoDugme}"
+                             Command="{Binding OrgKreirajSaradnikaCommand}"/>
                 <RadioButton Content="Prikaz Trenutnih Proslava"
                              Height="50"
                              Foreground="White"
                              FontSize="16"
-                             IsChecked="True"
                              Style="{StaticResource KorisnickoDugme}"
                              Command="{Binding OrgTrenutneProslaveCommand}"/>
                 <RadioButton Content="Prikaz Trenutnih Saradnika"
@@ -56,19 +69,6 @@
                              FontSize="16"
                              Style="{StaticResource KorisnickoDugme}"
                              Command="{Binding OrgGotoveProslaveCommand}"/>
-                <RadioButton Content="Kreiraj Novu Proslavu"
-                             Height="50"
-                             Margin="0,2,0,0"
-                             Foreground="White"
-                             FontSize="16"
-                             Style="{StaticResource KorisnickoDugme}"
-                             Command="{Binding OrgKreirajProslavuCommand}"/>
-                <RadioButton Content="Kreiraj Novog Saradnika"
-                             Height="50"
-                             Foreground="White"
-                             FontSize="16"
-                             Style="{StaticResource KorisnickoDugme}"
-                             Command="{Binding OrgKreirajSaradnikaCommand}"/>
                 <RadioButton Content="Odjavi Se"
                              Height="60"
                              Margin="0,350,0,0"

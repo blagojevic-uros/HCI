@@ -71,54 +71,55 @@
             Grid.Column="0"
             FontSize="18" Margin="329,69,212,537"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="329,102,237,489" 
-            RenderTransformOrigin="0.5,0.5"/>
-        <TextBox Style="{StaticResource KomentarTxtBox}" 
-            Margin="329,296,10,53" 
+            Margin="329,102,237,480" 
             RenderTransformOrigin="0.5,0.5"/>
         <Label Content="Prikaz Odabranog Saradnika"
-            FontSize="19" Margin="404,-1,88,606"/>
+            FontSize="19" Margin="404,-1,88,586"/>
         <Label Content="Adresa Lokala"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="329,159,212,447"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="329,192,237,399" 
+            Margin="329,192,237,389" 
             RenderTransformOrigin="0.5,0.5"/>
         <Label Content="Kapacitet Sale"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="329,247,212,359"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="329,280,237,311" 
+            Margin="329,280,237,305" 
             RenderTransformOrigin="0.5,0.5"/>
         <Label Content="Ime Lokala"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="556,69,-15,537"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="556,102,10,489" 
+            Margin="556,102,10,480" 
             RenderTransformOrigin="0.5,0.5"/>
         <Label Content="Broj Stolova"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="556,159,-15,447"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="556,192,10,399" 
+            Margin="556,192,10,389" 
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Kapacitet Prostorije"
+        <Rectangle Fill="#413469"
+            RadiusX="10"
+            RadiusY="10"
+            StrokeDashArray="2"
+            StrokeThickness="3"
+            Stroke="Silver" Margin="556,291,10,181"/>
+        <Label Content="Fotografija Lokala"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="556,247,-15,359"/>
-        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="556,280,10,311" 
-            RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Dodatni Komentar"
-            Grid.Row="0"
-            Grid.Column="0"
-            FontSize="18" Margin="453,350,88,256"/>
-        <Button Content="Obrisi Proslavu"
-            Margin="435,553,125,40"
+            FontSize="18" Margin="563,250,-22,356"/>
+        <Button Content="Azuriraj Saradnika"
+            Margin="329,531,243,53"
+            FontSize="18"
+            Background="#413469"
+            Foreground="White"/>
+        <Button Content="Obrisi Saradnika"
+            Margin="556,531,16,53"
             FontSize="18"
             Background="#9c2a28"
             Foreground="White" 
