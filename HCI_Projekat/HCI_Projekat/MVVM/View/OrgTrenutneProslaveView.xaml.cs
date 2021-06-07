@@ -94,5 +94,10 @@ namespace HCI_Projekat.MVVM.View
                 LB_SveProslave.Items.Add(listItem);
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

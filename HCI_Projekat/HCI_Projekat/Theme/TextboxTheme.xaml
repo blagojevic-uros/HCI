@@ -381,10 +381,12 @@
                                      Text="{TemplateBinding Text}"
                                      BorderThickness="0"
                                      Background="Transparent"
+                                     VerticalContentAlignment="Center"
                                      Padding="5"
                                      Foreground="#CFCFCF"
                                      x:Name="SearchBox"/>
                             <TextBlock IsHitTestVisible="False"
+                                       VerticalAlignment="Center"
                                        HorizontalAlignment="Left"
                                        Margin="10,0,0,0"
                                        FontSize="14"

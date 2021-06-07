@@ -87,7 +87,7 @@
             RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <Label Content="Prikaz Odabrane Proslave"
             FontSize="19" Margin="404,-1,58,330"/>
-        <Label Content="Tema Proslave"
+        <Label Content="Datum Proslave"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="329,159,145,171"/>
@@ -101,21 +101,18 @@
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="329,280,170,35" 
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Mesto Proslave"
+        <Label Content="Ime Lokala"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="556,69,-15,261" Grid.ColumnSpan="2"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="556,102,10,213" 
             RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
-        <Label Content="Datum Proslave"
+        <Label Content="Raspored Stolova"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="556,159,-15,171" Grid.ColumnSpan="2"/>
-        <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="556,192,10,123" 
-            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
-        <Label Content="Kapacitet Prostorije"
+        <Label Content="Tema Proslave"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="556,247,-15,83" Grid.ColumnSpan="2"/>
@@ -126,13 +123,18 @@
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="447,344,27,262" Grid.RowSpan="2"/>
-        <Button Content="Prikaz Rasporeda Stolova"
-            Margin="329,166,152,53"
+        <Button Content="Prikazi Raspored"
+            Margin="563,194,16,123"
             FontSize="18"
-            Background="#9c2a28"
-            Foreground="White" 
-            Grid.Row="1"/>
+            Background="#3a0646"
+            Foreground="White" Grid.ColumnSpan="2"/>
         <Button Content="Azuriraj Proslavu"
+            Margin="329,166,176,53"
+            FontSize="18"
+            Background="#413469"
+            Foreground="White" 
+            Grid.Row="1" Click="Button_Click"/>
+        <Button Content="Obrisi Proslavu"
             Margin="556,166,16,53"
             FontSize="18"
             Background="#9c2a28"
