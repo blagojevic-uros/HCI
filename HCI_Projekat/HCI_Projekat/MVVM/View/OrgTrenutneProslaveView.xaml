@@ -15,7 +15,7 @@
             <RowDefinition Height="187*"/>
             <RowDefinition Height="138*"/>
         </Grid.RowDefinitions>
-        <Label Content="Tabela Aktivnih Proslava"
+        <Label Content="Tabela Trenutnih Proslava"
                FontSize="19" Margin="46,-1,416,330"/>
         <Rectangle Fill="#413469"
                    RadiusX="10"
@@ -60,7 +60,7 @@
                  Drop="LB_OdabranaProslava_Drop"
                  MouseMove="LB_OdabranaProslava_MouseMove"
                  PreviewMouseLeftButtonDown="LB_OdabranaProslava_PreviewMouseLeftButtonDown"/>
-        <Label Content="(prevuci proslavu ka dole)"
+        <Label Content="(prevucite proslavu ka dole)"
                FontSize="17" Margin="46,368,404,236" Grid.RowSpan="2"/>
         <Label Content="(kako bi se prikazala)"
                FontSize="17" Margin="62,25,428,205" Grid.Row="1"/>

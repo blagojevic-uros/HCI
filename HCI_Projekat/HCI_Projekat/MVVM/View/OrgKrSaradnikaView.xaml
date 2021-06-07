@@ -7,41 +7,54 @@
              mc:Ignorable="d" 
              d:DesignHeight="650" d:DesignWidth="770">
     <Grid>
+        <Rectangle Fill="#413469"
+                   RadiusX="10"
+                   RadiusY="10"
+                   StrokeDashArray="2"
+                   StrokeThickness="3"
+                   Stroke="Silver" Margin="367,200,33,251"/>
         <Label Content="PIB Lokala"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="60,33,506,574"/>
+            FontSize="18" Margin="57,37,509,570"/>
         <TextBox Style="{StaticResource PrazanTextBox}" 
-            Margin="43,65,472,522" 
+            Margin="40,69,475,518" 
             RenderTransformOrigin="0.5,0.5"/>
         <Label Content="Ime Lokala"
             Grid.Column="0"
-            FontSize="18" Margin="60,139,506,448"/>
+            FontSize="18" Margin="57,143,509,444"/>
         <TextBox Style="{StaticResource PrazanTextBox}" 
-            Margin="43,173,472,414" 
+            Margin="40,177,475,410" 
             RenderTransformOrigin="0.5,0.5"/>
         <Button Content="Kreiraj Saradnika"
-            Margin="276,550,284,44"
+            Margin="276,541,286,44"
             FontSize="18"
             Background="#131d5e"
             Foreground="White"/>
         <Label Content="Kapacitet Sale"
-            FontSize="18" Margin="386,22,208,585"/>
+            FontSize="18" Margin="383,26,211,581"/>
         <TextBox Style="{StaticResource MoneyTxtBox}" 
-            Margin="370,65,224,522" 
+            Margin="367,69,227,518" 
             RenderTransformOrigin="0.5,0.5"/>
         <Label Content="Broj Stolova"
-            FontSize="18" Margin="584,22,-136,585"/>
+            FontSize="18" Margin="581,26,-133,581"/>
         <TextBox Style="{StaticResource MoneyTxtBox}" 
-            Margin="566,65,30,522" 
-            RenderTransformOrigin="0.5,0.5"/>
+            Margin="563,69,33,518" 
+            RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged"/>
         <Label Content="Adresa Lokala"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="60,249,506,358"/>
+            FontSize="18" Margin="57,253,509,354"/>
         <TextBox Style="{StaticResource PrazanTextBox}" 
-            Margin="43,281,472,306" 
+            Margin="40,285,475,302" 
             RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Odaberi Fotografiju"
+            Margin="470,404,131,204"
+            FontSize="15"
+            Background="#131d5e"
+            Foreground="White"/>
+        <Label Content="Fotografija Lokala"
+            FontSize="18" Margin="383,153,211,444"/>
 
     </Grid>
 </UserControl>

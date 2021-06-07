@@ -7,18 +7,25 @@
              mc:Ignorable="d" 
              d:DesignHeight="650" d:DesignWidth="770">
     <Grid>
-        <Label Content="Tabela Aktivnih Proslava"
+        <Label Content="Tabela Trenutnih Saradnika"
             FontSize="19" Margin="46,-1,483,606"/>
-        <ListBox Margin="34,49,483,282"
-            Background="#131d5e"
-            x:Name="LB_SveProslave"
-            AllowDrop="True"
-            Drop="LB_SveProslave_Drop"
-            PreviewMouseLeftButtonDown="LB_SveProslave_PreviewMouseLeftButtonDown"
-            MouseMove="LB_SveProslave_MouseMove"
-            FontSize="20"
-            Foreground="#CFCFCF"
-            HorizontalContentAlignment="Center">
+        <Rectangle Fill="#413469"
+                   RadiusX="10"
+                   RadiusY="10"
+                   StrokeDashArray="2"
+                   StrokeThickness="3"
+                   Stroke="Silver" Margin="34,44,483,272"/>
+        <ListBox Margin="34,49,483,272"
+                 Background="Transparent"
+                 Name="LB_SveProslave"
+                 BorderThickness="0"
+                 AllowDrop="True"
+                 Drop="LB_SveProslave_Drop"
+                 PreviewMouseLeftButtonDown="LB_SveProslave_PreviewMouseLeftButtonDown"
+                 MouseMove="LB_SveProslave_MouseMove"
+                 FontSize="20"
+                 Foreground="#CFCFCF"
+                 HorizontalContentAlignment="Center">
             <ListBoxItem Content="LB1 Item 1" Padding="0,10,0,10"/>
             <ListBoxItem Content="LB1 Item 2" Padding="0,10,0,10"/>
             <ListBoxItem Content="LB1 Item 3" Padding="0,10,0,10"/>
@@ -26,24 +33,30 @@
             <ListBoxItem Content="LB1 Item 5" Padding="0,10,0,10"/>
             <ListBoxItem Content="LB1 Item 6" Padding="0,10,0,10"/>
         </ListBox>
-        <Label Content="Odabrana Proslava"
-            FontSize="19" Margin="62,488,495,93"/>
-        <ListBox Margin="34,526,483,53"
-            
-            Background="#131d5e"
-            x:Name="LB_OdabranaProslava"
-            AllowDrop="True"
-            Foreground="#CFCFCF"
-            FontSize="20"
-            Drop="LB_OdabranaProslava_Drop"
-            MouseMove="LB_OdabranaProslava_MouseMove"
-            PreviewMouseLeftButtonDown="LB_OdabranaProslava_PreviewMouseLeftButtonDown"/>
-        <Label Content="(prevuci proslavu ka dole)"
+        <Label Content="Odabrani Saradnik"
+            FontSize="19" Margin="62,484,495,97"/>
+        <Rectangle Fill="WhiteSmoke"
+                   RadiusX="10"
+                   RadiusY="10"
+                   StrokeDashArray="2"
+                   StrokeThickness="3"
+                   Stroke="Silver" Margin="34,520,483,40"/>
+        <ListBox Margin="46,531,495,53"
+                 Background="WhiteSmoke"
+                 BorderThickness="0"
+                 Name="LB_OdabranaProslava"
+                 AllowDrop="True"
+                 Foreground="Black"
+                 FontSize="20"
+                 Drop="LB_OdabranaProslava_Drop"
+                 MouseMove="LB_OdabranaProslava_MouseMove"
+                 PreviewMouseLeftButtonDown="LB_OdabranaProslava_PreviewMouseLeftButtonDown"/>
+        <Label Content="(prevucite saradnika ka dole)"
             FontSize="17" Margin="46,368,471,236"/>
-        <Label Content="(kako bi se prikazala)"
-            FontSize="17" Margin="62,399,495,205"/>
+        <Label Content="(kako bi se prikazao)"
+            FontSize="17" Margin="62,391,495,213"/>
         <Label Content="---&gt;"
-            FontSize="28" Margin="97,443,563,134" RenderTransformOrigin="0.5,0.5">
+            FontSize="28" Margin="102,440,558,137" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -53,7 +66,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Ime i Prezime Klijenta"
+        <Label Content="PIB Lokala"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="329,69,212,537"/>
@@ -63,30 +76,30 @@
         <TextBox Style="{StaticResource KomentarTxtBox}" 
             Margin="329,296,10,53" 
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Prikaz Odabrane Proslave"
-            FontSize="19" Margin="404,-1,125,606"/>
-        <Label Content="Tema Proslave"
+        <Label Content="Prikaz Odabranog Saradnika"
+            FontSize="19" Margin="404,-1,88,606"/>
+        <Label Content="Adresa Lokala"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="329,159,212,447"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="329,192,237,399" 
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Budzet Proslave"
+        <Label Content="Kapacitet Sale"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="329,247,212,359"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="329,280,237,311" 
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Mesto Proslave"
+        <Label Content="Ime Lokala"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="556,69,-15,537"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="556,102,10,489" 
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Datum Proslave"
+        <Label Content="Broj Stolova"
             Grid.Row="0"
             Grid.Column="0"
             FontSize="18" Margin="556,159,-15,447"/>
