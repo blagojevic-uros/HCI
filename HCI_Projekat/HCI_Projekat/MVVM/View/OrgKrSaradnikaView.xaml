@@ -5,8 +5,43 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HCI_Projekat.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="650" d:DesignWidth="770">
     <Grid>
-            
+        <Label Content="PIB Lokala"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="60,33,506,574"/>
+        <TextBox Style="{StaticResource PrazanTextBox}" 
+            Margin="43,65,472,522" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Ime Lokala"
+            Grid.Column="0"
+            FontSize="18" Margin="60,139,506,448"/>
+        <TextBox Style="{StaticResource PrazanTextBox}" 
+            Margin="43,173,472,414" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Kreiraj Saradnika"
+            Margin="276,550,284,44"
+            FontSize="18"
+            Background="#131d5e"
+            Foreground="White"/>
+        <Label Content="Kapacitet Sale"
+            FontSize="18" Margin="386,22,208,585"/>
+        <TextBox Style="{StaticResource MoneyTxtBox}" 
+            Margin="370,65,224,522" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Broj Stolova"
+            FontSize="18" Margin="584,22,-136,585"/>
+        <TextBox Style="{StaticResource MoneyTxtBox}" 
+            Margin="566,65,30,522" 
+            RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Adresa Lokala"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="18" Margin="60,249,506,358"/>
+        <TextBox Style="{StaticResource PrazanTextBox}" 
+            Margin="43,281,472,306" 
+            RenderTransformOrigin="0.5,0.5"/>
+
     </Grid>
 </UserControl>

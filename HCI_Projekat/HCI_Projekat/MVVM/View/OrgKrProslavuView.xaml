@@ -68,12 +68,12 @@
         <TextBox Style="{StaticResource PrazanTextBox}" 
             Margin="43,70,84,29" 
             RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
-        <Label Content="Budzet Proslave"
+        <Label Content="Datum Proslave"
             FontSize="18" Margin="4,22,208,98" Grid.Column="1"/>
         <TextBox Style="{StaticResource MoneyTxtBox}" 
             Margin="370,65,224,35" 
             RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
-        <Label Content="Kapacitet Proslave"
+        <Label Content="Broj Stolova"
             Grid.Column="1"
             FontSize="18" Margin="185,22,-119,98"/>
         <TextBox Style="{StaticResource MoneyTxtBox}" 
