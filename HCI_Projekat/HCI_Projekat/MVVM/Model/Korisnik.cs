@@ -16,6 +16,7 @@ namespace HCI_Projekat.MVVM.Model
         private DateTime _datumRodjenja { get; set; }
         private string _role { get; set; }
 
+
         public Korisnik(string ime, string prezime, string email, string sifra, string pol ,DateTime datumRodj,string role)
         {
             _ime = ime;

@@ -27,7 +27,13 @@ namespace HCI_Projekat.MVVM.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            string name = ImeTxtBox.SelectedText;
+            string prezime = PrezimeTxtBox.SelectedText;
+            string email = EmailTxtBox.SelectedText;
+            string lozinka = LozinkaTxtBox.SelectedText;
+            string datum = DatumTxtBox.SelectedText;
+            
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
