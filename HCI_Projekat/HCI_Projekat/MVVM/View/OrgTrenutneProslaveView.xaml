@@ -75,63 +75,75 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Ime i Prezime Klijenta"
+        <Label Content="Ime i Prezime _Klijenta"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="329,69,145,261"/>
+            FontSize="18" Margin="329,69,145,261"
+            Target="{Binding ElementName=ImeKlijenta}"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="329,102,170,213" 
+            Name="ImeKlijenta"
             RenderTransformOrigin="0.5,0.5"/>
         <TextBox Style="{StaticResource KomentarTxtBox}" 
             Margin="323,290,16,59" 
+            Name="Komentar"
             RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <Label Content="Prikaz Odabrane Proslave"
             FontSize="19" Margin="404,-1,58,330"/>
-        <Label Content="Datum Proslave"
+        <Label Content="_Datum Proslave"
             Grid.Row="0"
             Grid.Column="0"
+            Target="{Binding ElementName=Datum}"
             FontSize="18" Margin="329,159,145,171"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="329,192,170,123" 
+            Name="Datum"
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Budzet Proslave"
+        <Label Content="_Budzet Proslave"
             Grid.Row="0"
+            Target="{Binding ElementName=PibTxtBox}"
             Grid.Column="0"
             FontSize="18" Margin="329,247,145,83"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="329,280,170,35" 
+            Name="Budzet"
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Ime Lokala"
+        <Label Content="Ime _Lokala"
             Grid.Row="0"
             Grid.Column="0"
+            Target="{Binding ElementName=ImeLokala}"
             FontSize="18" Margin="556,69,-15,261" Grid.ColumnSpan="2"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="556,102,10,213" 
+            Margin="556,102,10,213"
+            Name="ImeLokala"
             RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
-        <Label Content="Tema Proslave"
+        <Label Content="_Tema Proslave"
             Grid.Row="0"
             Grid.Column="0"
+            Target="{Binding ElementName=TemaProslave}"
             FontSize="18" Margin="556,159,-15,171" Grid.ColumnSpan="2"/>
         <Label Content="Raspored Stolova"
             Grid.Row="0"
             Grid.Column="0"
+            Target="{Binding ElementName=PibTxtBox}"
             FontSize="18" Margin="556,247,-15,83" Grid.ColumnSpan="2"/>
-        <Label Content="Dodatni Komentar"
+        <Label Content="Dodatni Ko_mentar"
             Grid.Row="0"
+            Target="{Binding ElementName=Komentar}"
             Grid.Column="0"
             FontSize="18" Margin="447,344,27,262" Grid.RowSpan="2"/>
-        <Button Content="Prikazi Raspored"
+        <Button Content="Prikazi _Raspored"
             Margin="563,280,16,37"
             FontSize="18"
             Background="#3a0646"
             Foreground="White" Grid.ColumnSpan="2"/>
-        <Button Content="Azuriraj Proslavu"
+        <Button Content="_Azuriraj Proslavu"
             Margin="329,166,176,53"
             FontSize="18"
             Background="#413469"
             Foreground="White" 
             Grid.Row="1" Click="Button_Click"/>
-        <Button Content="Obrisi Proslavu"
+        <Button Content="_Obrisi Proslavu"
             Margin="556,166,16,53"
             FontSize="18"
             Background="#9c2a28"
@@ -139,6 +151,7 @@
             Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="556,192,10,123" 
+            Name="TemaProslave"
             RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
     </Grid>
 </UserControl>

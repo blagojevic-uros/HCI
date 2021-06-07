@@ -66,63 +66,81 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="PIB Lokala"
+        <Label Content="_PIB Lokala"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="329,69,212,537"/>
+            FontSize="18" Margin="329,69,212,537"
+            Target="{Binding ElementName=PibTxtBox}"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
+            Name="PibTxtBox"
             Margin="329,102,237,480" 
             RenderTransformOrigin="0.5,0.5"/>
         <Label Content="Prikaz Odabranog Saradnika"
             FontSize="19" Margin="404,-1,88,586"/>
-        <Label Content="Adresa Lokala"
+        <Label Content="A_dresa Lokala"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="329,159,212,447"/>
+            FontSize="18" Margin="329,159,212,447"
+            Target="{Binding ElementName=AdresaLokala}"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="329,192,237,389" 
+            Name="AdresaLokala"
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Kapacitet Sale"
+        <Label Content="_Kapacitet Sale"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="329,247,212,359"/>
+            FontSize="18" Margin="329,247,212,359"
+            Target="{Binding ElementName=KapacitetSale}"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
             Margin="329,280,237,305" 
+            Name="KapacitetSale"
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Ime Lokala"
+        <Label Content="_Ime Lokala"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="556,69,-15,537"/>
+            FontSize="18" Margin="329,344,212,266"
+            Target="{Binding ElementName=ImeLokala}"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="556,102,10,480" 
+            Margin="329,368,237,199" 
+            Name="ImeLokala"
             RenderTransformOrigin="0.5,0.5"/>
-        <Label Content="Broj Stolova"
+        <Label Content="Broj _Stolova"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="556,159,-15,447"/>
+            FontSize="18" Margin="562,66,-21,538"
+            Target="{Binding ElementName=BrojStolova}"/>
         <TextBox Style="{StaticResource PrikazTxtBoxic}" 
-            Margin="556,192,10,389" 
+            Name="BrojStolova"
+            Margin="562,100,4,478" 
             RenderTransformOrigin="0.5,0.5"/>
         <Rectangle Fill="#413469"
             RadiusX="10"
             RadiusY="10"
             StrokeDashArray="2"
             StrokeThickness="3"
-            Stroke="Silver" Margin="556,291,10,181"/>
+            Stroke="Silver" Margin="562,204,4,261"/>
         <Label Content="Fotografija Lokala"
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="18" Margin="563,250,-22,356"/>
-        <Button Content="Azuriraj Saradnika"
+            FontSize="18" Margin="569,161,-28,443"/>
+        <Button Content="_Azuriraj Saradnika"
             Margin="329,531,243,53"
             FontSize="18"
             Background="#413469"
             Foreground="White"/>
-        <Button Content="Obrisi Saradnika"
+        <Button Content="_Obrisi Saradnika"
             Margin="556,531,16,53"
             FontSize="18"
             Background="#9c2a28"
             Foreground="White" 
         />
+        <Image
+               Source="pack://application:,,,/Images/island.jpg"
+               Margin="571,192,10,241"/>
+        <Button Content="_Promeni Fotografiju"
+            Margin="581,394,27,199"
+            FontSize="15"
+            Background="#413469"
+            Foreground="White" RenderTransformOrigin="0.466,0.415"/>
     </Grid>
 </UserControl>
