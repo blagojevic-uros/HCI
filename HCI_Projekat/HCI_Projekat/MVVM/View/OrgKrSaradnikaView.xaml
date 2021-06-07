@@ -7,6 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="650" d:DesignWidth="770">
     <Grid>
+        <Image Width="50"
+               Height="50"/>
         <Rectangle Fill="#413469"
                    RadiusX="10"
                    RadiusY="10"
