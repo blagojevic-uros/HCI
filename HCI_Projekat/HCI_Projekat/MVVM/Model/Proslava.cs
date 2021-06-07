@@ -18,7 +18,7 @@ namespace HCI_Projekat.MVVM.Model
         private string _komentar { get; set; }
         private List<Sto> _stolovi { get; set; }//nije u konst
 
-
+         
 
         public Proslava(Korisnik klijent, Saradnik saradnik, string tema, DateTime datum, double budzet, int kapacitet, string komentar)
         {

@@ -15,7 +15,7 @@ namespace HCI_Projekat.MVVM.Model
         private int _br_stolova;
         private string _slika;
 
-
+         
         public Saradnik(int pib, string ime, string adresa, int kapacitet, int br_stolova, string slika)
         {
             _pib = pib;
