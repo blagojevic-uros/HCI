@@ -94,10 +94,5 @@ namespace HCI_Projekat.MVVM.View
                 LB_SveProslave.Items.Add(listItem);
             }
         }
-
-        private void LB_SveProslave_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }
