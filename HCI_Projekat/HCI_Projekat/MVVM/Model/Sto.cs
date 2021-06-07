@@ -18,4 +18,5 @@ namespace HCI_Projekat.MVVM.Model
             _imena = imena;
         }
     }
+
 }
